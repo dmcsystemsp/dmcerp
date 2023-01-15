@@ -34,5 +34,25 @@ namespace DMCERP.br.com.erp.view
             descricao.Width = 350;
 
         }
+
+        private void btnManutencao_Click(object sender, EventArgs e)
+        {
+            FrmCadastroServico cad = new FrmCadastroServico();
+            cad.Show();
+            this.Hide();
+        }
+
+        private void dgvServicos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            FrmCadastroServico cad = new FrmCadastroServico();
+            cad.txtCodigo.Text = dgvServicos.CurrentRow.Cells[0].Value.ToString();
+            cad.Show();
+            this.Hide();
+        }
+
+        private void dgvServicos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

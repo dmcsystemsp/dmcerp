@@ -50,7 +50,7 @@
             this.pnlServicos.Font = new System.Drawing.Font("Corbel", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlServicos.Location = new System.Drawing.Point(0, 0);
             this.pnlServicos.Name = "pnlServicos";
-            this.pnlServicos.Size = new System.Drawing.Size(659, 48);
+            this.pnlServicos.Size = new System.Drawing.Size(613, 48);
             this.pnlServicos.TabIndex = 1;
             // 
             // lblServicos
@@ -73,7 +73,7 @@
             this.grpPesquisa.Font = new System.Drawing.Font("Corbel", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpPesquisa.Location = new System.Drawing.Point(5, 54);
             this.grpPesquisa.Name = "grpPesquisa";
-            this.grpPesquisa.Size = new System.Drawing.Size(643, 73);
+            this.grpPesquisa.Size = new System.Drawing.Size(598, 73);
             this.grpPesquisa.TabIndex = 2;
             this.grpPesquisa.TabStop = false;
             this.grpPesquisa.Text = "Pesquisa Serviços";
@@ -83,7 +83,7 @@
             this.txtPesquisa.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPesquisa.Location = new System.Drawing.Point(130, 28);
             this.txtPesquisa.Name = "txtPesquisa";
-            this.txtPesquisa.Size = new System.Drawing.Size(503, 29);
+            this.txtPesquisa.Size = new System.Drawing.Size(456, 29);
             this.txtPesquisa.TabIndex = 2;
             // 
             // rdoDescricao
@@ -119,27 +119,30 @@
             this.dgvServicos.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvServicos.RowHeadersWidth = 30;
             this.dgvServicos.RowTemplate.Height = 24;
-            this.dgvServicos.Size = new System.Drawing.Size(633, 196);
+            this.dgvServicos.Size = new System.Drawing.Size(598, 196);
             this.dgvServicos.TabIndex = 3;
+            this.dgvServicos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicos_CellContentClick);
+            this.dgvServicos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicos_CellDoubleClick);
             // 
             // btnManutencao
             // 
             this.btnManutencao.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnManutencao.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManutencao.Location = new System.Drawing.Point(5, 348);
+            this.btnManutencao.Location = new System.Drawing.Point(154, 335);
             this.btnManutencao.Name = "btnManutencao";
-            this.btnManutencao.Size = new System.Drawing.Size(413, 44);
+            this.btnManutencao.Size = new System.Drawing.Size(154, 44);
             this.btnManutencao.TabIndex = 6;
             this.btnManutencao.Text = "Manutenção";
             this.btnManutencao.UseVisualStyleBackColor = false;
+            this.btnManutencao.Click += new System.EventHandler(this.btnManutencao_Click);
             // 
             // btnSair
             // 
             this.btnSair.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnSair.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSair.Location = new System.Drawing.Point(508, 348);
+            this.btnSair.Location = new System.Drawing.Point(314, 335);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(139, 44);
+            this.btnSair.Size = new System.Drawing.Size(150, 44);
             this.btnSair.TabIndex = 5;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
@@ -149,7 +152,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 407);
+            this.ClientSize = new System.Drawing.Size(613, 391);
             this.ControlBox = false;
             this.Controls.Add(this.btnManutencao);
             this.Controls.Add(this.btnSair);

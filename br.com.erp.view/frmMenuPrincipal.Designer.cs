@@ -39,6 +39,8 @@
             this.ssMenuPrincipal = new System.Windows.Forms.StatusStrip();
             this.tssLblData = new System.Windows.Forms.ToolStripStatusLabel();
             this.tssData = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsmMunicipio = new System.Windows.Forms.ToolStripMenuItem();
+            this.stsServicos = new System.Windows.Forms.ToolStripMenuItem();
             this.msPrincipal.SuspendLayout();
             this.ssMenuPrincipal.SuspendLayout();
             this.SuspendLayout();
@@ -56,12 +58,15 @@
             this.tsmSair});
             this.msPrincipal.Location = new System.Drawing.Point(0, 0);
             this.msPrincipal.Name = "msPrincipal";
-            this.msPrincipal.Size = new System.Drawing.Size(1150, 30);
+            this.msPrincipal.Size = new System.Drawing.Size(1150, 28);
             this.msPrincipal.TabIndex = 1;
             this.msPrincipal.Text = "menuStrip1";
             // 
             // cadastrosToolStripMenuItem
             // 
+            this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmMunicipio,
+            this.stsServicos});
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
             this.cadastrosToolStripMenuItem.Text = "Cadastros";
@@ -127,6 +132,20 @@
             this.tssData.Size = new System.Drawing.Size(85, 20);
             this.tssData.Text = "11/01/2023";
             // 
+            // tsmMunicipio
+            // 
+            this.tsmMunicipio.Name = "tsmMunicipio";
+            this.tsmMunicipio.Size = new System.Drawing.Size(224, 26);
+            this.tsmMunicipio.Text = "Municípios";
+            this.tsmMunicipio.Click += new System.EventHandler(this.tsmMunicipio_Click);
+            // 
+            // stsServicos
+            // 
+            this.stsServicos.Name = "stsServicos";
+            this.stsServicos.Size = new System.Drawing.Size(224, 26);
+            this.stsServicos.Text = "Serviços";
+            this.stsServicos.Click += new System.EventHandler(this.stsServicos_Click);
+            // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -166,5 +185,7 @@
         private System.Windows.Forms.StatusStrip ssMenuPrincipal;
         private System.Windows.Forms.ToolStripStatusLabel tssLblData;
         private System.Windows.Forms.ToolStripStatusLabel tssData;
+        private System.Windows.Forms.ToolStripMenuItem tsmMunicipio;
+        private System.Windows.Forms.ToolStripMenuItem stsServicos;
     }
 }

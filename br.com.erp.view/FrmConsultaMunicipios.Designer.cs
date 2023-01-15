@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlMunicipios = new System.Windows.Forms.Panel();
             this.lblMunicipios = new System.Windows.Forms.Label();
             this.grpPesquisa = new System.Windows.Forms.GroupBox();
@@ -51,7 +51,7 @@
             this.pnlMunicipios.Font = new System.Drawing.Font("Corbel", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlMunicipios.Location = new System.Drawing.Point(0, 0);
             this.pnlMunicipios.Name = "pnlMunicipios";
-            this.pnlMunicipios.Size = new System.Drawing.Size(796, 48);
+            this.pnlMunicipios.Size = new System.Drawing.Size(746, 48);
             this.pnlMunicipios.TabIndex = 0;
             // 
             // lblMunicipios
@@ -85,7 +85,7 @@
             this.txtPesquisa.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPesquisa.Location = new System.Drawing.Point(232, 28);
             this.txtPesquisa.Name = "txtPesquisa";
-            this.txtPesquisa.Size = new System.Drawing.Size(551, 29);
+            this.txtPesquisa.Size = new System.Drawing.Size(501, 29);
             this.txtPesquisa.TabIndex = 2;
             this.txtPesquisa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPesquisa_KeyPress);
             // 
@@ -123,17 +123,17 @@
             this.dgvMunicipios.Location = new System.Drawing.Point(5, 133);
             this.dgvMunicipios.Name = "dgvMunicipios";
             this.dgvMunicipios.ReadOnly = true;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Corbel", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMunicipios.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvMunicipios.RowHeadersWidth = 70;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Corbel", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMunicipios.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvMunicipios.RowHeadersWidth = 50;
             this.dgvMunicipios.RowTemplate.Height = 24;
-            this.dgvMunicipios.Size = new System.Drawing.Size(783, 332);
+            this.dgvMunicipios.Size = new System.Drawing.Size(733, 332);
             this.dgvMunicipios.TabIndex = 2;
             this.dgvMunicipios.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMunicipios_CellDoubleClick);
             // 
@@ -141,9 +141,9 @@
             // 
             this.btnSair.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnSair.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSair.Location = new System.Drawing.Point(676, 474);
+            this.btnSair.Location = new System.Drawing.Point(367, 474);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(108, 44);
+            this.btnSair.Size = new System.Drawing.Size(161, 44);
             this.btnSair.TabIndex = 3;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
@@ -155,7 +155,7 @@
             this.btnManutencao.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManutencao.Location = new System.Drawing.Point(198, 474);
             this.btnManutencao.Name = "btnManutencao";
-            this.btnManutencao.Size = new System.Drawing.Size(312, 44);
+            this.btnManutencao.Size = new System.Drawing.Size(163, 44);
             this.btnManutencao.TabIndex = 4;
             this.btnManutencao.Text = "Manutenção";
             this.btnManutencao.UseVisualStyleBackColor = false;
@@ -165,7 +165,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 530);
+            this.ClientSize = new System.Drawing.Size(746, 530);
+            this.ControlBox = false;
             this.Controls.Add(this.btnManutencao);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.dgvMunicipios);

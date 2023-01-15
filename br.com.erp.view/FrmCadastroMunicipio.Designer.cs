@@ -62,10 +62,9 @@
             // lblCadastroMunicipios
             // 
             this.lblCadastroMunicipios.AutoSize = true;
-            this.lblCadastroMunicipios.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblCadastroMunicipios.Font = new System.Drawing.Font("Corbel", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadastroMunicipios.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.lblCadastroMunicipios.Location = new System.Drawing.Point(0, 0);
+            this.lblCadastroMunicipios.Location = new System.Drawing.Point(204, 22);
             this.lblCadastroMunicipios.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCadastroMunicipios.Name = "lblCadastroMunicipios";
             this.lblCadastroMunicipios.Size = new System.Drawing.Size(246, 28);

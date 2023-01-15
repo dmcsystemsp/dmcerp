@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DMCERP.br.com.erp.model
 {
-    class Servico
+    public class Servico
     {
         public int Codigo { get; set; }
         public string Descricao { get; set; }

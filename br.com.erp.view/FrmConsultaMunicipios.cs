@@ -29,7 +29,14 @@ namespace DMCERP.br.com.erp.view
             MunicipiosDao dao = new MunicipiosDao();
           
             dgvMunicipios.DataSource = dao.ListaMunicipios();
-            
+            DataGridViewColumn codigo = dgvMunicipios.Columns[0];
+            codigo.Width = 70;
+            DataGridViewColumn nomemun = dgvMunicipios.Columns[1];
+            nomemun.Width = 180;
+            DataGridViewColumn cduf = dgvMunicipios.Columns[2];
+            cduf.Width = 50;
+            DataGridViewColumn uf = dgvMunicipios.Columns[4];
+            uf.Width = 50;
         }
 
         private void btnManutencao_Click(object sender, EventArgs e)

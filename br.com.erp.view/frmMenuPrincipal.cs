@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DMCERP.br.com.erp.view;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,18 @@ namespace DMCERP
             {
                 Application.Exit();
             }
+        }
+
+        private void tsmMunicipio_Click(object sender, EventArgs e)
+        {
+            FrmConsultaMunicipios mun = new FrmConsultaMunicipios();
+            mun.Show();
+        }
+
+        private void stsServicos_Click(object sender, EventArgs e)
+        {
+            FrmTabelaServicos ser = new FrmTabelaServicos();
+            ser.Show();
         }
     }
 }

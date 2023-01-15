@@ -32,7 +32,7 @@ namespace DMCERP.br.com.erp.model
                                nomeuf as ""Estado"",
                                siglauf ""UF""
                                FROM 
-                                  tbl_municipios 
+                                  tbl_municipio
                                ORDER BY 
                                       siglauf";
 
@@ -60,7 +60,7 @@ namespace DMCERP.br.com.erp.model
         {
             try
             {
-                string sql = @"INSERT INTO tbl_municipios(
+                string sql = @"INSERT INTO tbl_municipio(
                                          cdmunicipio,
                                          nomemunicipio,
                                          cduf,
@@ -99,7 +99,7 @@ namespace DMCERP.br.com.erp.model
         {
             try
             {
-                string sql = @"UPDATE tbl_municipios SET
+                string sql = @"UPDATE tbl_municipio SET
                                       nomemunicipio = @nomemunicipio,
                                       cduf = @cduf,
                                       nomeuf = @nomeuf,
@@ -131,7 +131,7 @@ namespace DMCERP.br.com.erp.model
         {
             try
             {
-                string sql = @"DELETE FROM tbl_municipios
+                string sql = @"DELETE FROM tbl_municipio
                                   WHERE cdmunicipio = @code";
 
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
@@ -196,7 +196,7 @@ namespace DMCERP.br.com.erp.model
                                nomeuf as ""Estado"",
                                siglauf ""UF""
                                FROM 
-                                  tbl_municipios 
+                                  tbl_municipio
                                WHERE 
                                    nomemunicipio LIKE @nome ";
 
@@ -232,7 +232,7 @@ namespace DMCERP.br.com.erp.model
                                nomeuf as ""Estado"",
                                siglauf ""UF""
                                FROM 
-                                  tbl_municipios 
+                                  tbl_municipio
                                WHERE 
                                    siglauf = @uf
                                ORDER BY nomemunicipio";

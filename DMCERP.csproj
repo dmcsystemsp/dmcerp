@@ -114,6 +114,12 @@
     <Compile Include="br.com.erp.view\FrmCadastroMunicipio.Designer.cs">
       <DependentUpon>FrmCadastroMunicipio.cs</DependentUpon>
     </Compile>
+    <Compile Include="br.com.erp.view\FrmCadastroServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="br.com.erp.view\FrmCadastroServico.Designer.cs">
+      <DependentUpon>FrmCadastroServico.cs</DependentUpon>
+    </Compile>
     <Compile Include="br.com.erp.view\frmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="br.com.erp.view\FrmCadastroMunicipio.resx">
       <DependentUpon>FrmCadastroMunicipio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="br.com.erp.view\FrmCadastroServico.resx">
+      <DependentUpon>FrmCadastroServico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="br.com.erp.view\frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
